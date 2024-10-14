@@ -24,4 +24,38 @@ header, section.normal{
 section.flex-content{
     padding: 20px;
     background-color: rgb(156, 156, 156);
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text{
+    flex: 1 1 500px;
+}
+
+article > div.media{
+    flex: 1 0 500px;
+}
+
+div.media > img{
+    display: block;
+    margin: auto;
+}
+
+div.media > iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
 }
