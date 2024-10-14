@@ -52,6 +52,8 @@ article > div.media{
 div.media > img{
     display: block;
     margin: auto;
+    width: 300px;
+    padding: 10px;
 }
 
 div.media > iframe{
