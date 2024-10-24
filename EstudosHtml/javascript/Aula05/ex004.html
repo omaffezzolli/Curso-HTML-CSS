@@ -13,10 +13,11 @@
 
     <script>
         function resultado(){
-            var ver = window.document.getElementById('txtnacionalidade').value
+            var ver = window.document.getElementById('txtnacionalidade')
             var res = window.document.getElementById('res')
+            var veri = (ver.value)
             res.innerHTML = `Você é `
-            if(ver == 'Brasileiro' || ver == 'brasileiro'){
+            if(veri == 'Brasileiro' || veri == 'brasileiro'){
                 res.innerHTML += 'Brasileiro'
             }else {
                 res.innerHTML += 'Estrangeiro'
