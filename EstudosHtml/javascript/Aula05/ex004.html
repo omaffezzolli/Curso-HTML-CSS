@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileiro ou não</title>
+</head>
+<body>
+    <p>Informe sua nacionalidade: </p>
+    <input type="text" name="txtnacionalidade" id="txtnacionalidade">
+    <input type="button" value="Enviar" onclick="resultado()">
+    <div id="res"></div>
+
+    <script>
+        function resultado(){
+            var ver = window.document.getElementById('txtnacionalidade').value
+            var res = window.document.getElementById('res')
+            res.innerHTML = `Você é `
+            if(ver == 'Brasileiro' || ver == 'brasileiro'){
+                res.innerHTML += 'Brasileiro'
+            }else {
+                res.innerHTML += 'Estrangeiro'
+            }
+        }
+    </script>
+
+
+</body>
+</html>
