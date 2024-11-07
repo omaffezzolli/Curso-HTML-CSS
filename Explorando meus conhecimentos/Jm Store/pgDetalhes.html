@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Detalhes</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header{
+            background-image: linear-gradient(to bottom, black, white);
+            text-align: center;
+            font-size: 1.6em;
+            color: white;
+            border-radius: 15px 15px 0px 0px;
+            padding: 20px;
+        }
+
+        main{
+            margin: auto;
+            text-align: center;
+            background-color: rgb(148, 148, 148);
+            max-width: 500px;
+            border-radius: 100px;
+            padding: 30px;
+        }
+
+        main > p{
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        main > p > a{
+            text-decoration: none;
+            color: black;
+        }
+
+        main > p > a:hover{
+            text-decoration: underline;
+            color: rgb(148, 148, 148);
+        }
+
+        section{
+            text-align: center;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 0px 0px 5px 5px;
+            margin-top: auto;
+        }
+
+        footer > p > a{
+            color: white;
+            text-decoration: none;
+            text-align: right;
+        }
+
+        footer > p > a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        footer > a{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer > a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+            padding: 7px;
+        }
+
+        section > p > a{
+            text-decoration: none;
+            color: white;
+        }
+
+        section > p > a:hover{
+            text-decoration: underline;
+            color: rgb(148, 148, 148);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>JM STORE</h1>
+        </section>
+        <section>
+            <p><a href="pgCarrinho.html">Carrinho de Compras &#x1F6D2</a></p>
+        </section>
+    </header>
+    
+    <main>
+        <h1>Camisa Corinthians 1990</h1>
+        <img src="imagens/camisa7.png" alt="">
+        <h3>Preço R$379,90</h3>
+        <p><a href="#">Adicionar ao carrinho</a></p>
+
+        <section>
+            <h2>Característica:</h2>
+            <p>- Escudo em silk com alta definição.</p>
+            <p>- Todos os produtos a pronta entrega.</p>
+            <p>- Produto oficial licenciado.</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="pgContatos.html">Meios de Comunicação</a>
+        <p><a href="pgProdutos.html">Voltar</a></p>
+    </footer>
+</body>
+</html>

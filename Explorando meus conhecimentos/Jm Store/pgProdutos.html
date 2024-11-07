@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Produtos</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-image: linear-gradient(to bottom, black, white);
+            text-align: center;
+            font-size: 1.6em;
+            color: white;
+            border-radius: 15px 15px 0px 0px;
+            padding: 20px;
+        }
+
+        #container{
+            width: 96vw;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #peças{
+            background-color: rgb(148, 148, 148);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            flex-direction: column;
+        }
+
+        #peças > p {
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            border-radius: 50px;
+        }
+
+        #peças > p:hover{
+            background-color: black;
+        }
+
+        #peças > p > a:hover {
+            text-align: right;
+            color: rgb(148, 148, 148);
+        }
+
+        #peças > p > a {
+            text-decoration: none;
+            color: black;
+            text-decoration: underline;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+        footer > p > a{
+            color: white;
+            text-decoration: none;
+            text-align: right;
+        }
+
+        footer > p > a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        footer > a{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer > a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+            padding: 7px;
+        }
+
+        section > p > a{
+            text-decoration: none;
+            color: white;
+        }
+
+        section > p > a:hover{
+            text-decoration: underline;
+            color: rgb(148, 148, 148);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>JM STORE</h1>
+        </section>
+        <section>
+            <p><a href="pgCarrinho.html">Carrinho de Compras &#x1F6D2</a></p>
+        </section>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="peças">
+                <img src="imagens/camisa7.png" alt="">
+                <p><a href="pgDetalhes.html">Detalhes</a></p>
+            </div>
+            <div id="peças">
+                <img src="imagens/camisa6.png" alt="">
+                <p><a href="pgDetalhes.html">Detalhes</a></p>
+            </div>
+            <div id="peças">
+                <img src="imagens/camisa3.png" alt="">
+                <p><a href="pgDetalhes.html">Detalhes</a></p>
+            </div>
+            <div id="peças">
+                <img src="imagens/camisa1.png" alt="">
+                <p><a href="pgDetalhes.html">Detalhes</a></p>
+            </div>
+            <div id="peças">
+                <img src="imagens/camisa2.png" alt="">
+                <p><a href="pgDetalhes.html">Detalhes</a></p>
+            </div>
+            <div id="peças">
+                <img src="imagens/camisa5.png" alt="">
+                <p><a href="pgDetalhes.html">Detalhes</a></p>
+            </div>
+            <div id="peças">
+                <img src="imagens/camisa4.png" alt="">
+                <p><a href="pgDetalhes.html">Detalhes</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="pgContatos.html">Meios de Comunicação</a>
+        <p><a href="pgPrincipal.html">Voltar</a></p>
+    </footer>
+    
+</body>
+</html>

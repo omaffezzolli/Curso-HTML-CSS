@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, black, white);
+            text-align: center;
+            font-size: 1.6em;
+            color: white;
+            border-radius: 15px 15px 0px 0px;
+            padding: 20px;
+        }
+
+        #container{
+            width: 96vw;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #peças{
+            background-color: rgb(148, 148, 148);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            flex-direction: column;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 0px 0px 5px 5px;
+            margin-top: auto;
+        }
+
+        footer > p > a{
+            color: white;
+            text-decoration: none;
+            text-align: right;
+        }
+
+        footer > p > a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        footer > a{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer > a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            padding: 7px;
+        }
+
+        section{
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        input{
+            background-color: rgb(148, 148, 148);
+            color: white;
+            font-size: 1.2em;
+            width: 300px;
+            height: 30px;
+            border-radius: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>JM STORE</h1>
+        </section>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="peças">
+                <img src="imagens/camisa7.png" alt="">
+            </div>
+            <div id="peças">
+                <img src="imagens/camisa6.png" alt="">
+            </div>
+        </div>
+        <section>
+            <input type="button" value="Finalizar compras&#x1F6D2">
+        </section>
+    </main>
+
+    <footer>
+        <a href="pgContatos.html">Meios de Comunicação</a>
+        <p><a href="pgPrincipal.html">Voltar</a></p>
+    </footer>
+</body>
+</html>

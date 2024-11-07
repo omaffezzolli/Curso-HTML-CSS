@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-image: linear-gradient(to bottom, black, white);
+            text-align: center;
+            font-size: 1.6em;
+            color: white;
+            border-radius: 15px 15px 0px 0px;
+            padding: 20px;
+        }
+
+        main {
+            margin: auto;
+            text-align: center;
+            background-color: rgb(148, 148, 148);
+            max-width: 500px;
+            border-radius: 100px;
+            padding: 30px;
+        }
+
+        main h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        main > p {
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 0px 0px 5px 5px;
+            margin-top: auto;
+        }
+
+        footer > p > a {
+            color: white;
+            text-decoration: none;
+            text-align: right;
+        }
+
+        footer > p > a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        footer > a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer > a:hover {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>JM STORE</h1>
+        </section>
+    </header>
+
+    <main>
+        <h2>Contato</h2>
+        <p>Fale conosco preenchendo o formulário abaixo ou entre em contato pelos nossos meios de comunicação.</p>
+
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <section>
+            <h3>Informações de Contato</h3>
+            <p><strong>Email:</strong> contato@jmstore.com.br</p>
+            <p><strong>Telefone:</strong> (47) 1234-5678</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="pgContatos.html">Meios de Comunicação</a>
+        <p><a href="pgPrincipal.html">Voltar</a></p>
+    </footer>
+</body>
+</html>
